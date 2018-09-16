@@ -257,12 +257,69 @@
           }
         }
       }
+    },
+    "state": {
+      "root": "libs/state",
+      "sourceRoot": "libs/state/src",
+      "projectType": "library",
+      "prefix": "c4g",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/state/src/test.ts",
+            "tsConfig": "libs/state/tsconfig.spec.json",
+            "karmaConfig": "libs/state/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/state/tsconfig.lib.json",
+              "libs/state/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "feature-project-detail": {
+      "root": "libs/feature-project-detail",
+      "sourceRoot": "libs/feature-project-detail/src",
+      "projectType": "library",
+      "prefix": "c4g",
+      "architect": {
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/feature-project-detail/src/test.ts",
+            "tsConfig": "libs/feature-project-detail/tsconfig.spec.json",
+            "karmaConfig": "libs/feature-project-detail/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/feature-project-detail/tsconfig.lib.json",
+              "libs/feature-project-detail/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
     "warnings": {
       "typescriptMismatch": false,
-      "versionMismatch": false
+      "versionMismatch": false,
+      "packageManager": "yarn"
     },
     "defaultCollection": "@nrwl/schematics"
   },
