@@ -33,6 +33,9 @@
       ],
       "@Code4Good/feature-project-detail": [
         "libs/feature-project-detail/src/index.ts"
+      ],
+      "@Code4Good/feature-auth": [
+        "libs/feature-auth/src/index.ts"
       ]
     }
   },

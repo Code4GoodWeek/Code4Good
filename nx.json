@@ -31,6 +31,9 @@
     },
     "feature-project-detail": {
       "tags": []
+    },
+    "feature-auth": {
+      "tags": []
     }
   }
 }

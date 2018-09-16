@@ -10,5 +10,7 @@
   ],
   "include": [
     "**/*.ts"
-  ]
+  
+    , "../../libs/feature-auth/src/index.ts"
+]
 }
