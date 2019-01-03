@@ -3,7 +3,7 @@
     <button mat-icon-button (click)="upvote.next(item.id)">
       <mat-icon>grade</mat-icon>
     </button>
-    <span>{{item.vote}}</span>
+    <span>{{ item.vote }}</span>
     <a matLine [routerLink]="['/project', item.id]">{{ item.name }}</a>
   </mat-list-item>
 </mat-nav-list>
